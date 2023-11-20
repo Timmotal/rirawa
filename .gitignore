@@ -8,12 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-<<<<<<< HEAD
-client
-theServer
-serverLegacySake
-=======
->>>>>>> master
+client/
+theServer/
+serverLegacySake/
 .env
 dist
 dist-ssr

@@ -15,7 +15,7 @@ export const authSlice = createSlice({
   reducers: { // this is our actions, this are functions that involve modifying the global state
     // thats the difference between this and a regular function
     setMode: (state) => {
-      state.mode = state.mode === "dark" ? "light" : "dark";
+      state.mode = state.mode === "light" ? "dark" : "light";
     },
     setLogin: (state, action) => {
       // Action just like function →

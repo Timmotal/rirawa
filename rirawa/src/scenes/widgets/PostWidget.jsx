@@ -47,7 +47,7 @@ const PostWidget = ({
   const primary = palette.primary.main;
 
   const patchLike = async () => { // change the number of likes
-    const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
+    const response = await fetch(`https://rirawa-single-server.onrender.com/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`http://localhost:3001/assets/${picturePath}`}
+          src={`https://rirawa-single-server.onrender.com/assets/${picturePath}`}
         />
       )}
       {/* THE LIKE SECTION */}

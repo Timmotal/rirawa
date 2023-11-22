@@ -17,7 +17,7 @@ const FriendListWidget = ({ userId }) => {
     // this will grab list of users for that specific user ID (i think he meant list of friends)
     const response = await fetch(
       //  so we need to make sure we are grabbing not just the current user but other users as well
-      `http://localhost:3001/users/${userId}/friends`,
+      `https://rirawa-single-server.onrender.com/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

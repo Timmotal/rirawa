@@ -1,8 +1,11 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+import { useNavigate } from "react-router-dom";
+
 
 const LoginPage = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
     <Box>
@@ -13,7 +16,12 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          Hey-O
+        <img 
+            src={theme.palette.mode === "dark" ? "../assets/logoLite.png" : "../assets/logo.png"} 
+            alt="logo" 
+            style={{ width: '120px' }}
+            onClick={() => navigate("/home")} 
+          />
         </Typography>
       </Box>
 

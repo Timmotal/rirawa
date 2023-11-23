@@ -33,7 +33,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-        Yo ho ho! Greetings from Hey-O Socius Network
+        Yo ho ho! Greetings to you!!
         </Typography>
         <Form />
       </Box>

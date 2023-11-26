@@ -143,7 +143,7 @@ const Navbar = () => {
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
           position="fixed"
-          right="0"
+          left="0"
           bottom="0"
           height="100%"
           zIndex="10"
@@ -152,7 +152,7 @@ const Navbar = () => {
           backgroundColor={background}
         >
           {/* CLOSE ICON */}
-          <Box display="flex" justifyContent="flex-end" p="1rem">
+          <Box display="flex" justifyContent="flex-start" p="1rem">
             <IconButton
               onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
@@ -181,7 +181,7 @@ const Navbar = () => {
           }}
         >
           <img 
-            src="../assets/logo.png" 
+            src={theme.palette.mode === "dark" ? "../assets/logoLite.png" : "../assets/logo.png"} 
             alt="logo" 
             style={{ width: '120px' }}
             onClick={() => navigate("/home")} 

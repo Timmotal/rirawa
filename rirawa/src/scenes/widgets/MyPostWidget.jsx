@@ -68,7 +68,7 @@ const MyPostWidget = ({ picturePath }) => {
           value={post}
           sx={{
             width: "100%",
-            backgroundColor: palette.neutral.light,
+            backgroundColor: palette.neutral.dark,
             borderRadius: "2rem",
             padding: "1rem 2rem",
           }}
@@ -141,20 +141,20 @@ const MyPostWidget = ({ picturePath }) => {
               <Typography  color={mediumMain} >Clip</Typography>
             </FlexBetween>
 
-            <FlexBetween 
+            {/* <FlexBetween 
               gap="0.25rem" onClick={() => setIsImage(!isImage)}
               sx={{ "&:hover": { cursor: "pointer", color: medium } }}
             >
               <AttachFileOutlined sx={{ color: mediumMain }} />
               <Typography  color={mediumMain}  >Attachment</Typography>
-            </FlexBetween>
+            </FlexBetween> */}
 
             <FlexBetween 
               gap="0.25rem" onClick={() => setIsImage(!isImage)}
               sx={{ "&:hover": { cursor: "pointer", color: medium } }}
             >
               <MicOutlined sx={{ color: mediumMain }} />
-              <Typography  color={mediumMain}  >Audio</Typography>
+              <Typography  color={mediumMain}  >Record</Typography>
             </FlexBetween>
           </>
         ) : (

@@ -128,7 +128,7 @@ const MyPostWidget = ({ picturePath }) => {
           sx={{ "&:hover": { cursor: "pointer", color: medium } }}
         >
           <ImageOutlined sx={{ color: mediumMain }} />
-          <Typography color={mediumMain}   > Image  </Typography>
+          <Typography color={mediumMain}> Image  </Typography>
         </FlexBetween>
 
         {isNonMobileScreens ? (

@@ -83,6 +83,11 @@ const PostWidget = ({
       )}
       {/* THE LIKE SECTION */}
       <FlexBetween mt="0.25rem">
+
+      <IconButton>
+          <ShareOutlined />
+        </IconButton>
+
         <FlexBetween gap="1rem">
           <FlexBetween gap="0.3rem">
             <IconButton onClick={patchLike}>
@@ -106,9 +111,9 @@ const PostWidget = ({
           </FlexBetween>
         </FlexBetween>
 
-        <IconButton>
+        {/* <IconButton>
           <ShareOutlined />
-        </IconButton>
+        </IconButton> */}
       </FlexBetween>
       
       {isComments && (

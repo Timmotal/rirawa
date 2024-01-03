@@ -128,13 +128,21 @@ const Form = () => {
       }) => (
         <form onSubmit={handleSubmit}>
           <Box
+  display="grid"
+  gap="30px"
+  gridTemplateColumns="repeat(4, minmax(0, 1fr))"
+  sx={{ // anything div elements that are direct children to this element
+    "& > div": { gridColumn: isNonMobile ? undefined : "span 4" }, // 4 span for mobile
+  }}
+>
+          {/* <Box
             display="grid"
             gap="30px"
             gridTemplateColumns="repeat(4, minmax(0, 1fr))"
             sx={{ // anything div elements that are direct children to this element
               "& > div": { gridColumn: isNonMobile ? undefined : "span 4" }, // 4 span for mobile
             }}
-          >
+          > */}
             {isRegister && (
               <>
                 <TextField

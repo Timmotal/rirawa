@@ -9,7 +9,7 @@ const LoginPage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
     <Box  sx={{
-      backgroundImage: "url('https://img.topfapgirls.com/1/14/13796/lil-braids-lilbraids/lil-braids-lilbraids-188-1080px.jpg')",
+      backgroundImage: "url('https://plus.unsplash.com/premium_photo-1703689541382-8945aee7fcf8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }}>

@@ -47,7 +47,7 @@ const LoginPage = () => {
        Yo ho ho! Greetings to you!!
        </Typography>
        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-       Copy and paste 'wonderwoman' as G-Mail and Password if you do not want to sign up.
+       Copy and paste 'abcdefg' as G-Mail and Password if you do not want to sign up.
        </Typography>
        <Form />
      </Box>

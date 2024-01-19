@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 // 
 
 const initialState = {
-  mode: "light",
+  mode: "dark",
   user: null,
   token: null,  // all the authorization info we are going to store
   posts: [], // include all the posts that we make
